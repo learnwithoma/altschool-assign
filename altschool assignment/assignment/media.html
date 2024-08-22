@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Media</title>
+    <link rel="stylesheet" href="styles/media.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="form.html">Application Form</a></li>
+                <li><a href="table.html">Courses & Schools</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>About Me - Media</h1>
+            <article>
+                <p>Welcome to a visual representation of who I am. Through the images, videos, and audio below, I hope you get a glimpse of my journey, passions, and ambitions.</p>
+            </article>
+
+            <section>
+                <h2>Responsive Image</h2>
+                <picture>
+                    <!-- Source for extra large screens (e.g., large desktops) -->
+                    <source media="(min-width: 1200px)" srcset="./assets/images/globaloma.jpg">
+                    <!-- Source for large screens (e.g., laptops) -->
+                    <source media="(min-width: 992px)" srcset="./assets/images/globaloma.jpg">
+                    <!-- Source for medium screens (e.g., tablets) -->
+                    <source media="(min-width: 768px)" srcset="./assets/images/globaloma.jpg">
+                    <!-- Source for small screens (e.g., large smartphones) -->
+                    <source media="(min-width: 576px)" srcset="./assets/images/globaloma.jpg">
+                    <!-- Source for extra small screens (e.g., small smartphones) -->
+                    <source media="(max-width: 575px)" srcset="./assets/images/globaloma.jpg">
+                    <!-- Fallback image for browsers that don't support the picture element -->
+                    <img src="./assets/images/globaloma.jpg" alt="Responsive image">
+                </picture>
+            </section>
+
+            <section>
+                <h2>Audio Element</h2>
+                <audio controls>
+                    <source src="./assets/audio/oma.ogg" type="audio/ogg">
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+            </section>
+
+            <section>
+                <h2>Video Element</h2>
+                <!-- YouTube Video Embed -->
+                <iframe width="515" height="315" src="https://www.youtube.com/embed/dldEgSPn2IE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+
+            
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chioma Victoria Odezue</p>
+    </footer>
+</body>
+</html>
